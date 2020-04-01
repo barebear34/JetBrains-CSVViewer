@@ -1,0 +1,18 @@
+#Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+.idea/**/workspace.xml
+.idea/**/usage.statistics.xml
+.idea/**/tasks.xml
+.idea/**/gradle.xml
+.idea/**/modules.xml
+.idea/**/uiDesigner.xml
+**/*iml
+**/target
+.gradle
+gradle.properties
+out/
+.DS_Store

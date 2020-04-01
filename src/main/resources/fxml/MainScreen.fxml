@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="520.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csvviewer.gui.MainController">
+   <children>
+      <Pane prefHeight="520.0" prefWidth="775.0">
+         <children>
+            <VBox prefHeight="520.0" prefWidth="775.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="775.0" spacing="10" style="-fx-background-color: #DADDE5;">
+                     <children>
+                        <TextField fx:id="csv" alignment="CENTER" prefHeight="25.0" prefWidth="320.0" promptText="Path to csv" />
+                        <TextField fx:id="interpreter" alignment="TOP_CENTER" prefHeight="25.0" prefWidth="320.0" promptText="Path to interpreter" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#onLoad" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #4e69ab#4e69ab;" text="Load" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/load.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <TableView fx:id="tableView" prefHeight="494.0" prefWidth="766.0" style="-fx-background-color: #DADDE5; -fx-selection-bar: #4e69ab#4e69ab;" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
