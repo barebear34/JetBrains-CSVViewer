@@ -26,7 +26,6 @@ object CsvLoader {
                 .lines()
                 .toList()
                 .toMutableList()
-            println(out.size)
             val columns = out
                 .removeAt(0)
                 .split(", ")
